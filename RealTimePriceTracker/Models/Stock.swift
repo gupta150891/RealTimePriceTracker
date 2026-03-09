@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Stock: Identifiable, Codable {
+struct Stock: Identifiable, Codable, Hashable {
     let id = UUID()
     let symbol: String
     var price: Double
