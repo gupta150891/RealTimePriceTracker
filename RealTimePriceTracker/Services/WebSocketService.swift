@@ -13,7 +13,7 @@ class WebSocketService {
     static let shared = WebSocketService()
 
     private var webSocketTask: URLSessionWebSocketTask?
-    // pass through gives only the latest value
+    // passthrough gives only the latest value
     private let subject = PassthroughSubject<String, Never>()
 
     var publisher: AnyPublisher<String, Never> {
